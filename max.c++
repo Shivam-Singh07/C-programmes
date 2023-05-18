@@ -5,14 +5,10 @@ int main(){
     cin>>n;
     int arr[n];
     for(int i=0;i<n;i++) cin>>arr[i];
-    int x;
-    cin>>x;
-    int count=0;
-    
+    int max=arr[0];
     for(int i=0;i<n;i++){
-        if(arr[i]==x) count++;
+        if(max<arr[i]) max=arr[i];
     }
-    if(count>0) cout<<x<<" present in the array";
-    else cout<<x<<" not present";
+    cout<<max<<endl;
     return 0;
 }
