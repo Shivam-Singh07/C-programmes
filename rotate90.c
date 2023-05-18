@@ -26,42 +26,12 @@ int main()
                 int temp=arr[i][j];
                 arr[i][j]=arr[j][i];
                 arr[j][i]=temp;
-                // printf("\n%d",arr[i][j]);
-
-            }
-            // int temp=arr[i][j];
-            // arr[i][j]=arr[j][i];
-            // arr[j][i]=temp;
-            // int temp=i;
-            // i=j;
-            // j=temp;
-            // arr[i][j];
-            
+            }    
         }
-    }
-    // for (i = 0; i < n2; i++)
-    // {
-    //     for (j = 0; j < n1; j++)
-    //     {
-    //         printf("%d", arr[j][i]);
-    //     }
-    //     printf("\n");
-    // }
-
-    int brr[n2][n1];
-    // for (i = 0; i < n2; i++)
-    // {
-    //     for (j = 0; j < n1; j++)
-    //     {
-    //         // scanf("%d",&z);
-    //         brr[j][i] = arr[j][i];
-    //         printf("%d", brr[j][i]);
-    //     }
-    //     printf("\n");
-    // }
+    } 
     for (int i = 0; i < n2; i++)
     {
-        for (int j = 0; j < n1; j++)
+        for (int j = n1-1; j>=0; j--)
         {
             // scanf("%d",&z);
             // brr[j][i] = arr[j][i];
@@ -71,3 +41,4 @@ int main()
     }
     return 0;
 }
+               
